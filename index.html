@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Quizz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">Quizz</h1>
+        </header>
+        <main class="main">
+            <h2 
+            id="spanQuestion"
+            class="spanQuestion">
+                Question
+            </h2>
+            <div id="idAnswers" class="divGeneral divAnswers">
+                <button 
+                id="answer1" 
+                class="btnAnswer" 
+                title="Key 1" 
+                onClick="clickOnAnswer(this.id)">
+                    1
+                </button>
+                <button 
+                id="answer2" 
+                class="btnAnswer" 
+                title="Key 2" 
+                onClick="clickOnAnswer(this.id)">
+                    2
+                </button>
+                <button 
+                id="answer3" 
+                class="btnAnswer" 
+                title="Key 3" 
+                onClick="clickOnAnswer(this.id)">
+                    3
+                </button>
+                <button 
+                id="answer4" 
+                class="btnAnswer" 
+                title="Key 4" 
+                onClick="clickOnAnswer(this.id)">
+                    4
+                </button>
+            </div>
+            <div id="idDivResults" class="divGeneral divResults">
+                <div id="idTitleResults">
+                    <span 
+                    class="idResultsPercentage" 
+                    id="idResultsPercentage">
+                        Results %
+                    </span>
+                </div>
+                <div id="divResultsSpan"></div>
+            </div>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
