@@ -15,7 +15,7 @@ body {
   font-size: 40px;
 }
 
-.spanQuestion {
+.imgQuestion {
   border: 5px solid #5E565A;
   border-radius: 25px;
   background: #F4D06F;
@@ -23,7 +23,8 @@ body {
   text-transform: capitalize;
   display: flex;
   justify-content: center;
-  width: 200px;
+  max-width: 400px;
+  max-height: 400px;
   margin: 10px auto;
 }
 
