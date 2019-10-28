@@ -23,8 +23,8 @@ body {
   text-transform: capitalize;
   display: flex;
   justify-content: center;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 500px;
   margin: 10px auto;
 }
 
@@ -45,6 +45,7 @@ body {
   background-color: #A9CBB7;
   font-size: x-large; 
   margin: 10px 0;
+  font-style: oblique;
 }
 
 .divResults {
@@ -64,6 +65,7 @@ body {
   justify-content: center;
   align-content: center;
   margin: 0 auto;
+  font-style: oblique;
 }
 
 .correctAnswer {

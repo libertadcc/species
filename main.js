@@ -1,37 +1,34 @@
 'use strict';
 
 let gData;
+let gPercentage;
 let gStackQuestions;
 let gCurrentIndex = 0;
 let gCorrectAnswerIndex = 0;
 let gNumberOfCorrectAnswers = 0;
 
-//Carga la función de un json
+
 function loadJSON(jsonNameFile, callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
   xobj.open('GET', jsonNameFile, true); 
-  // Replace 'my_data' with the path to your file
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
-    // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
     callback(xobj.responseText);
     }
   };
   xobj.send(null);  
 }
 
-//Carga el archivo .json.
-// - Ejecuta la función anterior
 function init() {
-  loadJSON("species.json", function(response) {
-  // Parse JSON string into object
+  loadJSON("birds.json", function(response) {
     gData = JSON.parse(response);
     gStackQuestions = shuffle(gData.q);
     createQuestion();
   });
 }
-//Hace un array con soluciones de forma aleatoria y devuelve ese array
+
+
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
   // While there remain elements to shuffle...
@@ -46,7 +43,7 @@ function shuffle(array) {
   }
   return array;
 }
-// Coge un verbo y la respuesta correcta. Pero luego ni idea -----
+
 function getNextCandidate(listCandidates, correctAnswer) {
   let found = false;
   let nextCandidate = "";
@@ -60,7 +57,7 @@ function getNextCandidate(listCandidates, correctAnswer) {
   }
   return nextCandidate;
 }
-//Crea una pregunta ----
+
 function createQuestion() {
   let selectedQuestion = gStackQuestions[gCurrentIndex];
   console.log(selectedQuestion.q);
@@ -90,7 +87,7 @@ function createSpanResult(text, isCorrect) {
 function clickOnAnswer(clickedBtn) {
   let clickedButton = clickedBtn.substr(clickedBtn.length - 1);
   let isCorrectAnswer = gCorrectAnswerIndex == clickedButton;
-  let text = (gCurrentIndex + 1).toString() + ". "+ gStackQuestions[gCurrentIndex].q + " ";
+  let text = (gCurrentIndex + 1).toString() + ". ";
   text += (isCorrectAnswer ? gStackQuestions[gCurrentIndex].a : document.getElementById(clickedBtn).innerHTML);
 
   createSpanResult(text, isCorrectAnswer);
@@ -98,7 +95,6 @@ function clickOnAnswer(clickedBtn) {
   if (isCorrectAnswer) {
     ++gNumberOfCorrectAnswers;
   }
-  //debugger
   ++gCurrentIndex;
   createQuestion();
 
