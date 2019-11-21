@@ -1,6 +1,7 @@
 body {
-  margin: 0;
-  padding: 40px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #EFECCA;
   box-sizing: border-box;
@@ -29,16 +30,23 @@ body {
 }
 
 .divAnswers {
-  margin: 20px;
-  padding: 15px;
-  display: flex; 
+  /* margin: 20px;
+  padding: 15px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90px 90px;
+  grid-column-gap: 5px;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  text-transform: capitalize;
+  text-transform: capitalize; */
 }
 
 .btnAnswer {
-  width: 15%;
+  justify-self: center;
+  align-self: stretch;
+  width: 200px;
+  max-width: 300px;
   cursor: pointer;
   border-radius: 20px;
   border: 3px solid #5E565A;
@@ -80,6 +88,9 @@ body {
 }
 
 @media all and (min-width: 768px) {
+  body {
+    padding-top: 40px;
+  }
   .divAnswers {
     flex-direction: row;
     justify-content: space-evenly;

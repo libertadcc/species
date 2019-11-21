@@ -60,7 +60,6 @@ function getNextCandidate(listCandidates, correctAnswer) {
 
 function createQuestion() {
   let selectedQuestion = gStackQuestions[gCurrentIndex];
-  console.log(selectedQuestion.q);
   document.getElementById("imgQuestion").setAttribute('src', selectedQuestion.q)
 
   let listCandidates = [];
