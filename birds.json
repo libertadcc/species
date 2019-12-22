@@ -403,6 +403,26 @@
 		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7o-XGiRXgNOzn87328auWQeECC7bHW_51mrq0Yi25meUnx60m&s",
 			"a": "Petronia petronia"},
 		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0iuviwYLfrIecU0LDWIIwMiU4IVqIQ9yFudcmHjY8qz7pAZVL&s",
-			"a": "Montifringilla nivalis"}
+			"a": "Montifringilla nivalis"},
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTE2x1MwxHCoaCSCUfl5J077CPKgcBEX8meES_D-PbEKv8B3U&s", 
+			"a": "Amandava amandava"},
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ70FsPBlLQjRlyx9_ttlIlgR5An4yAZjJl7J-I8FmgaoIeqoFf9Q&s", 
+			"a": "Fringilla coelebs"},	
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwksoVV-e3kIvWDE8nKtmR8SaZqktIOifB5K3V2C1_R5gyd5eTQ&s", 
+			"a": "Fringilla teydea"},
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgvK7VY0mIKcd5hHR7DXQCXu-NE3vbdqt_BDE5Y_uEuFzh9NzpAw&s", 
+			"a": "Fringilla montifringilla"},
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ZtMSCiegQVVKGDHr4o3Eq77WPOtQ2gqUK5FqNX5LN87R2f31&s", 
+			"a": "Serinus serinus"},
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzAJFtnTiuyG1xg4wx1L0-GShVj7tlS9ruGsN-GpysynjUTYtj&s", 
+			"a": "Serinus canaria"},	
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7KKyL5M5ExzmLqsH6eSr-zMPeiOZePcYa0ucZCx2Y76mDC3TQXQ&s", 
+			"a": "Chloris chloris"},
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2TVidsDsrs1BWcXS4cBIZd_z7yMQWXV7N1acWG8VG2Gcsyxp0&s", 
+			"a": "Carduelis carduelis"},	
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1RqXKsXrkKiZXmdq1pvJFJuvRtr49ou0aTzKU4jPvPVYixd_&s", 
+			"a": "Carduelis spinus"},
+		{ "q": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3P8mTqbqPA06KLJ0Y1AiW_rSANjIN0O5iTditeis66lwh-iXeSA&s", 
+			"a": "Carduelis cannabina"}
 	] 
 }
